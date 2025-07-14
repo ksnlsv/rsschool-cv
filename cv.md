@@ -26,7 +26,7 @@ ABOUT ME
 SKILLS
 =
 
-I know the basics of C, C++, Python, JavaScript, OOP, databases, and advanced mathematics.
+I know the basics of C, C++, Python, JavaScript, OOP, databases, and advanced mathematics.:)
 
 
 
