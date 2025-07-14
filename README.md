@@ -1,5 +1,8 @@
 # rsschool-cv
-https://ksnlsv.github.io/rsschool-cv/cv
 
-#github
+https://ksnlsv.github.io/rsschool-cv/
+
+github
+=
+
 ksnlsv
