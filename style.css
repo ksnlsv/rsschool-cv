@@ -1,135 +1,71 @@
-@font-face {
-    font-family: "Roboto";
-    src: url("C:\Users\админ\Downloads\Roboto-VariableFont_wdth,wght.ttf");
-    font-weight: 100;
+/* Шрифты и основная стилизация */
+.forum-regular {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-@font-face {
-    font-family: "Roboto";
-    src: url("c:\Users\админ\Downloads\Roboto-Italic-VariableFont_wdth,wght.ttf");
-    font-weight: 300;
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin:auto;
+    overflow-x: scroll; /* Горизонтальный скроллинг */
+}
+
+.wrapper {
+    width: 1920px; /* Фиксированная ширина */
+}
+
+.header {
+    width: 1920px; /* Фиксированная ширина */
+    background-color: #030303;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 
-.header{
-    height: 200px;
-    width: max-content;
-    font-family: 'Roboto';
-    
-}
-.nav{
-    height: 60px;
-    background-color: rgb(123, 226, 255);
-    width: 1465px;
-}
-.nlist{
+.header_wrapper {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 62px; /* Отступ для контента под шапкой */
 }
-.nav-link{
-    padding: 0 40px;
-    line-height: 50px;
-}
-.nav-item{
-    color: rgb(0, 0, 0);
-    font-size: larger;
-}
-.imgcv{
-    height: 180px;
-    width: 180px;
-}
-.unfooter{
-    height: 250px;
-    width: 1465px;
+
+/* Стили для списка в шапке */
+.header_list {
     display: flex;
-    flex-direction: row;
-    background-color: rgb(198, 238, 255);
-    margin-bottom: 0%;
-}
-.img1{
-    padding-left: 220px;
-    padding-top: 40px;
-}
-.h1{
-    
-    color: rgb(0, 0, 0);
-}
-.h2{
-    font-size: xx-large;
-    font-weight: 500;
-    font-family: 'Roboto';
-    margin-left: 380px;
-    margin-top: 100px;
-    text-align: justify;
+    flex-wrap: nowrap; /* Убедитесь, что элементы не переносятся */
+    font-size: 22px;
+    line-height: 2;
+    color: #FFFFFF;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
+.header_item {
+    margin-right: 50px;
 }
 
-.info1,
-.info2 {
-    width: 1465px;
-    background-color: rgb(227, 240, 246);
-    text-align: justify;
-    display: flex;
-    flex-direction: column; 
-    padding: 20px;
+.header_item:last-child {
+    margin-right: 0; /* Убираем отступ у последнего элемента */
 }
 
-.box1,
-.box2,
-.box3,
-.box4 {
-    width: 100%; 
-    color: rgb(6, 110, 190);
-    margin: 10px 0; 
+/* Стили для ссылок в шапке */
+.header_link {
+    color: #FFFFFF; /* Цвет текста для ссылок */
+    text-decoration: none;
+    transition: opacity 0.3s ease; /* Убираем подчеркивание */
 }
 
-.h3 {
-    font-size: x-large;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-}
-
-.h4, .h5 {
-    font-size: large;
-    font-weight: 200;
-}
-.footer{
-    height: 60px;
-    background-color: rgb(139, 212, 255);
-    width: 1465px;
-    display: flex;
-    flex-direction: row;
-}
-.git{
-    font-size: medium;
-    font-weight: 300;
-    color: rgb(0, 0, 0);
-    margin-left: 530px;
-    margin-top: 20px;
-}
-.logo{
-    height: 30px;
-    width: 30px;
-    margin-top: 13px;
-    padding-left: 60px;
-}
-.year{
-    color: rgb(0, 0, 0);
-    font-size: medium;
-    font-weight: 300;
-    padding-left: 60px;
-    margin-top: 20px;
-}
-.course{
-    color: rgb(0, 0, 0);
-    font-size: medium;
-    font-weight: 300;
-    padding-left: 10px;
-    margin-top: 18px; 
+.header_link:hover, 
+.header_link:focus, 
+.header_link:active {
+    opacity: 0.75; /* Эффект при наведении */
 }
