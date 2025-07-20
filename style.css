@@ -1,0 +1,71 @@
+/* Шрифты и основная стилизация */
+.forum-regular {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin:auto;
+    overflow-x: scroll; /* Горизонтальный скроллинг */
+}
+
+.wrapper {
+    width: 1920px; /* Фиксированная ширина */
+}
+
+.header {
+    width: 1920px; /* Фиксированная ширина */
+    background-color: #030303;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 62px; /* Отступ для контента под шапкой */
+}
+
+/* Стили для списка в шапке */
+.header_list {
+    display: flex;
+    flex-wrap: nowrap; /* Убедитесь, что элементы не переносятся */
+    font-size: 22px;
+    line-height: 2;
+    color: #FFFFFF;
+}
+
+.header_item {
+    margin-right: 50px;
+}
+
+.header_item:last-child {
+    margin-right: 0; /* Убираем отступ у последнего элемента */
+}
+
+/* Стили для ссылок в шапке */
+.header_link {
+    color: #FFFFFF; /* Цвет текста для ссылок */
+    text-decoration: none;
+    transition: opacity 0.3s ease; /* Убираем подчеркивание */
+}
+
+.header_link:hover, 
+.header_link:focus, 
+.header_link:active {
+    opacity: 0.75; /* Эффект при наведении */
+}
